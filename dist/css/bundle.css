@@ -1,0 +1,659 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+q:before,
+blockquote:after,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/*
+ * Visual Studio 2015 dark style
+ * Author: Nicolas LLOBERA <nllobera@gmail.com>
+ */
+
+.hljs {
+  display: block;
+  overflow-x: auto;
+  padding: 0.5em;
+  background: #1E1E1E;
+  color: #DCDCDC;
+}
+
+.hljs-keyword,
+.hljs-literal,
+.hljs-symbol,
+.hljs-name {
+  color: #569CD6;
+}
+.hljs-link {
+  color: #569CD6;
+  text-decoration: underline;
+}
+
+.hljs-built_in,
+.hljs-type {
+  color: #4EC9B0;
+}
+
+.hljs-number,
+.hljs-class {
+  color: #B8D7A3;
+}
+
+.hljs-string,
+.hljs-meta-string {
+  color: #D69D85;
+}
+
+.hljs-regexp,
+.hljs-template-tag {
+  color: #9A5334;
+}
+
+.hljs-subst,
+.hljs-function,
+.hljs-title,
+.hljs-params,
+.hljs-formula {
+  color: #DCDCDC;
+}
+
+.hljs-comment,
+.hljs-quote {
+  color: #57A64A;
+  font-style: italic;
+}
+
+.hljs-doctag {
+  color: #608B4E;
+}
+
+.hljs-meta,
+.hljs-meta-keyword,
+.hljs-tag {
+  color: #9B9B9B;
+}
+
+.hljs-variable,
+.hljs-template-variable {
+  color: #BD63C5;
+}
+
+.hljs-attr,
+.hljs-attribute,
+.hljs-builtin-name {
+  color: #9CDCFE;
+}
+
+.hljs-section {
+  color: gold;
+}
+
+.hljs-emphasis {
+  font-style: italic;
+}
+
+.hljs-strong {
+  font-weight: bold;
+}
+
+/*.hljs-code {
+  font-family:'Monospace';
+}*/
+
+.hljs-bullet,
+.hljs-selector-tag,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-selector-attr,
+.hljs-selector-pseudo {
+  color: #D7BA7D;
+}
+
+.hljs-addition {
+  background-color: #144212;
+  display: inline-block;
+  width: 100%;
+}
+
+.hljs-deletion {
+  background-color: #600;
+  display: inline-block;
+  width: 100%;
+}
+* {
+  box-sizing: border-box;
+}
+.clear {
+  clear: both;
+}
+.clear-left {
+  clear: left;
+}
+.clear-right {
+  clear: right;
+}
+.welcome-container {
+  position: absolute;
+  z-index: 9997;
+  padding: 10px;
+  top: 0;
+  left: 0;
+  color: #222;
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+  -webkit-transition: .75s all;
+  -moz-transition: .75s all;
+  -ms-transition: .75s all;
+  -o-transition: .75s all;
+  transition: .75s all;
+}
+.welcome-container .title {
+  font-size: 18px;
+}
+.welcome-container .welcome-content {
+  padding-top: 35vh;
+  line-height: 50px;
+}
+.welcome-container .welcome-content .welcome-text {
+  font-size: 40px;
+  font-weight: bolder;
+}
+.welcome-container .welcome-content .start-button {
+  padding: 0;
+  width: 250px;
+  height: 45px;
+  cursor: pointer;
+  font: 18px 'Share Tech Mono', monospace;
+  margin-top: 10px;
+  border: none;
+  background-color: #222;
+  -webkit-transition: .1s all;
+  -moz-transition: .1s all;
+  -ms-transition: .1s all;
+  -o-transition: .1s all;
+  transition: .1s all;
+  color: #fff;
+  outline: none;
+}
+.welcome-container .welcome-content .start-button:hover {
+  background-color: #777;
+  color: #fff;
+}
+body {
+  -webkit-transition: .2s all;
+  -moz-transition: .2s all;
+  -ms-transition: .2s all;
+  -o-transition: .2s all;
+  transition: .2s all;
+  font-family: 'Share Tech Mono', monospace;
+}
+body .info-icon-container {
+  position: absolute;
+  z-index: 9998;
+  top: 20px;
+  right: 0;
+  transform: translateX(-20px);
+  cursor: pointer;
+  font-size: 30px;
+}
+body .info-icon-container .info-icon {
+  color: #222;
+  -webkit-transition: .2s all;
+  -moz-transition: .2s all;
+  -ms-transition: .2s all;
+  -o-transition: .2s all;
+  transition: .2s all;
+}
+body .info-icon-container .info-icon:hover {
+  color: #777;
+}
+body .info-container-overlay {
+  position: absolute;
+  z-index: 9999;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.9);
+  -webkit-transition: .2s all;
+  -moz-transition: .2s all;
+  -ms-transition: .2s all;
+  -o-transition: .2s all;
+  transition: .2s all;
+}
+body .info-container-overlay .close-button-container {
+  position: absolute;
+  top: 20px;
+  right: 0;
+  transform: translateX(-20px);
+}
+body .info-container-overlay .close-button-container .close-icon {
+  cursor: pointer;
+  color: #fff;
+  font-size: 30px;
+  -webkit-transition: .2s all;
+  -moz-transition: .2s all;
+  -ms-transition: .2s all;
+  -o-transition: .2s all;
+  transition: .2s all;
+}
+body .info-container-overlay .close-button-container .close-icon:hover {
+  color: #aaa;
+}
+body .info-container-overlay .gitquick-info {
+  text-align: center;
+  display: block;
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 20px;
+  line-height: 30px;
+  margin-top: 35vh;
+  color: #fff;
+}
+body .info-container-overlay .gitquick-info a {
+  color: #fff;
+}
+.form-container .app-form label[for="username"] {
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+}
+.form-container .app-form input[type="text"] {
+  width: 300px;
+  height: 30px;
+  padding: 0 10px;
+  display: block;
+  margin: 10px auto;
+  font-size: 16px;
+  font-family: 'Share Tech Mono', monospace;
+}
+.form-container button {
+  width: 300px;
+  height: 30px;
+  outline: none;
+  border: 1px solid #ddd;
+  cursor: pointer;
+  background-color: #fff;
+  display: block;
+  margin: 0 auto;
+  -webkit-transition: .2s all;
+  -moz-transition: .2s all;
+  -ms-transition: .2s all;
+  -o-transition: .2s all;
+  transition: .2s all;
+}
+.form-container button:hover {
+  background-color: #1177ff;
+}
+.form-container button i {
+  font-size: 20px;
+  width: 100%;
+  height: 30px;
+}
+.form-container button:hover {
+  color: #fff;
+}
+.app-header {
+  padding-top: 40vh;
+  -webkit-transition: .5s all;
+  -moz-transition: .5s all;
+  -ms-transition: .5s all;
+  -o-transition: .5s all;
+  transition: .5s all;
+}
+.app-header .title {
+  font-size: 30px;
+  font-weight: bolder;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.app-header .app-form label[for="username"] {
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+}
+.app-header .app-form input[type="text"] {
+  width: 300px;
+  height: 30px;
+  padding: 0 10px;
+  display: block;
+  margin: 10px auto;
+  font-size: 16px;
+  font-family: 'Share Tech Mono', monospace;
+}
+.app-header button {
+  width: 300px;
+  height: 30px;
+  outline: none;
+  border: 1px solid #ddd;
+  cursor: pointer;
+  background-color: #fff;
+  display: block;
+  margin: 0 auto;
+  -webkit-transition: .2s all;
+  -moz-transition: .2s all;
+  -ms-transition: .2s all;
+  -o-transition: .2s all;
+  transition: .2s all;
+}
+.app-header button:hover {
+  background-color: #1177ff;
+}
+.app-header button i {
+  font-size: 20px;
+  width: 100%;
+  height: 30px;
+}
+.app-header button:hover {
+  color: #fff;
+}
+.app-header .error-message-container {
+  margin: 20px auto;
+  text-align: center;
+}
+.app-header .error-message-container .error-message {
+  color: #f10044;
+  margin-top: 20px;
+}
+.app-main {
+  margin: 30px auto;
+  padding: 20px;
+}
+.app-main .app-container {
+  padding: 20px;
+}
+.app-main .app-container .repo-master-container {
+  vertical-align: top;
+}
+.app-main .app-container .repo-master-container .repo-title-container {
+  width: 100%;
+  margin-bottom: 10px;
+  font-weight: bolder;
+}
+.app-main .app-container .repo-master-container .repo-title-container .repo-instructions {
+  text-align: left;
+  padding-left: 10px;
+}
+.app-main .app-container .repo-master-container .repos-container {
+  width: 100%;
+  vertical-align: top;
+  margin-bottom: 20px;
+  max-height: 700px;
+  overflow-y: scroll;
+  border: 1px solid #222;
+}
+.app-main .app-container .repo-master-container .repos-container::-webkit-scrollbar {
+  width: 10px;
+}
+.app-main .app-container .repo-master-container .repos-container::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+.app-main .app-container .repo-master-container .repos-container::-webkit-scrollbar-thumb {
+  background-color: #1177ff;
+}
+.app-main .app-container .repo-master-container .repos-container .repos {
+  border: 1px solid #222;
+  border-left: none;
+  border-right: none;
+  border-bottom: none;
+  padding: 10px;
+  cursor: pointer;
+  -webkit-transition: .2s all;
+  -moz-transition: .2s all;
+  -ms-transition: .2s all;
+  -o-transition: .2s all;
+  transition: .2s all;
+  box-shadow: 0 0 1px #222;
+  display: block;
+  text-decoration: none;
+}
+.app-main .app-container .repo-master-container .repos-container .repos:link,
+.app-main .app-container .repo-master-container .repos-container .repos:visited {
+  color: #222;
+}
+.app-main .app-container .repo-master-container .repos-container .repos:hover {
+  color: #fff;
+  background-color: #f91122;
+}
+.app-main .app-container .repo-master-container .repos-container .repos:last-of-type {
+  border-bottom: 1px solid #222;
+}
+.app-main .app-container .code-master-container {
+  vertical-align: top;
+}
+.app-main .app-container .code-master-container .branch-name-container {
+  width: 100%;
+  margin-bottom: 10px;
+}
+.app-main .app-container .code-master-container .branch-name-container .root-branch {
+  text-align: left;
+  padding-left: 10px;
+  font-weight: bolder;
+  cursor: pointer;
+}
+.app-main .app-container .code-master-container .branch-name-container .navigation,
+.app-main .app-container .code-master-container .branch-name-container .branch-navigation {
+  cursor: pointer;
+}
+.app-main .app-container .code-master-container .code-container {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #222;
+  vertical-align: top;
+  box-shadow: 0 0 1px #222;
+  max-height: 700px;
+}
+.app-main .app-container .code-master-container .code-container .source-code-container {
+  padding: 10px;
+  max-height: 700px;
+  overflow-y: scroll;
+  background-color: #444;
+  color: #fff;
+  cursor: text;
+}
+.app-main .app-container .code-master-container .code-container .source-code-container::-webkit-scrollbar {
+  width: 10px;
+}
+.app-main .app-container .code-master-container .code-container .source-code-container::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+.app-main .app-container .code-master-container .code-container .source-code-container::-webkit-scrollbar-thumb {
+  background-color: #1177ff;
+}
+.app-main .app-container .code-master-container .code-container .source-code-container .source-code {
+  font: 12px 'Source Code Pro', monospace;
+  white-space: pre-wrap;
+  /* css-3 */
+  white-space: -moz-pre-wrap;
+  /* Mozilla, since 1999 */
+  white-space: -pre-wrap;
+  /* Opera 4-6 */
+  white-space: -o-pre-wrap;
+  /* Opera 7 */
+  word-wrap: break-word;
+  /* Internet Explorer 5.5+ */
+}
+.app-main .app-container .code-master-container .code-container .files {
+  border: 1px solid #222;
+  border-left: none;
+  border-right: none;
+  border-bottom: none;
+  padding: 10px;
+  cursor: pointer;
+  -webkit-transition: .2s all;
+  -moz-transition: .2s all;
+  -ms-transition: .2s all;
+  -o-transition: .2s all;
+  transition: .2s all;
+  box-shadow: 0 0 1px #222;
+  display: block;
+  text-decoration: none;
+}
+.app-main .app-container .code-master-container .code-container .files:link,
+.app-main .app-container .code-master-container .code-container .files:visited {
+  color: #222;
+}
+.app-main .app-container .code-master-container .code-container .files:hover {
+  color: #fff;
+  background-color: #f91122;
+}
+.app-main .app-container .code-master-container .code-container .files:last-of-type {
+  border-bottom: 1px solid #222;
+}
+.to-top {
+  padding-top: 40px;
+}
+.hidden {
+  display: none;
+}
+.opacity-hide {
+  opacity: 0;
+}
+.show {
+  opacity: 1;
+}
+.app-main .app-container .repo-master-container .repos-container .repos:link.current {
+  color: #fff;
+  background-color: #f91122;
+}
+.no-pointer-events {
+  pointer-events: none;
+}
+@media only screen and (min-width: 1119px) {
+  .app-main {
+    margin-left: 0;
+  }
+  .app-main .app-container .repo-master-container {
+    float: left;
+    width: 33.33%;
+  }
+  .app-main .app-container .code-master-container {
+    float: right;
+    width: 65.66%;
+  }
+  .app-main .app-container .code-master-container .code-container .source-code-container .source-code {
+    font: 16px 'Source Code Pro', monospace;
+  }
+}

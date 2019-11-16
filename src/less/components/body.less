@@ -1,0 +1,85 @@
+// Import fonts
+@import "./fonts";
+
+// Body Styles
+body {
+  -webkit-transition: .2s all;
+  -moz-transition: .2s all;
+  -ms-transition: .2s all;
+  -o-transition: .2s all;
+  transition: .2s all;
+  font-family: @mainFont;
+
+  .info-icon-container {
+    position: absolute;
+    z-index: 9998;
+    top: 20px;
+    right: 0;
+    transform: translateX(-20px);
+    cursor: pointer;
+    font-size: 30px;
+
+    .info-icon {
+      color: #222;
+      -webkit-transition: .2s all;
+      -moz-transition: .2s all;
+      -ms-transition: .2s all;
+      -o-transition: .2s all;
+      transition: .2s all;
+
+      &:hover {
+        color: #777;
+      }
+    }
+  }
+
+  .info-container-overlay {
+    position: absolute;
+    z-index: 9999;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, .9);
+    -webkit-transition: .2s all;
+    -moz-transition: .2s all;
+    -ms-transition: .2s all;
+    -o-transition: .2s all;
+    transition: .2s all;
+
+    .close-button-container {
+      position: absolute;
+      top: 20px;
+      right: 0;
+      transform: translateX(-20px);
+
+      .close-icon {
+        cursor: pointer;
+        color: #fff;
+        font-size: 30px;
+        -webkit-transition: .2s all;
+        -moz-transition: .2s all;
+        -ms-transition: .2s all;
+        -o-transition: .2s all;
+        transition: .2s all;
+
+        &:hover {
+          color: #aaa;
+        }
+      }
+    }
+
+    .gitquick-info {
+      text-align: center;
+      display: block;
+      max-width: 1024px;
+      margin: 0 auto;
+      padding: 20px;
+      line-height: 30px;
+      margin-top: 35vh;
+      color: #fff;
+
+      a {
+        color: #fff;
+      }
+    }
+  }
+}

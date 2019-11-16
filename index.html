@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>Gitquick | Review Code Quicker</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="author" content="Aaron Miller" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no" />
+    <link href="https://fonts.googleapis.com/css?family=Share+Tech+Mono" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" media="screen" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link href="dist/css/bundle.css" rel="stylesheet"></head>
+  <body>
+    <div class="info-icon-container">
+      <i class="fa fa-info-circle info-icon" aria-hidden="true"></i>
+    </div>
+    <div class="info-container-overlay opacity-hide no-pointer-events">
+      <div class="close-button-container">
+        <i class="fa fa-times-circle close-icon" aria-hidden="true"></i>
+      </div>
+      <p class="gitquick-info">Gitquick is a tool to help users quickly find code on Github and any other version control hosted code.<br /> <br /> Instead of struggling to navigate through Github's system, users can simply enter the username and the code comes to them. <br /> <br /> Feel free to check out this project on <a href="https://github.com/aaronmiller/apps/tree/master/gitquick" target="_blank">Github</a></p>
+    </div>
+    <!-- <div class="welcome-container opacity-hide">
+      <section class="welcome-content">
+        <h1 class="welcome-text">Welcome to Gitquick.</h1>
+        <p>You can search a Github user's repositories and quickly look at their code.</p>
+        <button type="button" class="start-button">Start</button>
+      </section>
+    </div> -->
+    <header class="app-header">
+      <h2 class="title">Gitquick</h2>
+      <section class="form-container">
+        <form class="app-form">
+          <section>
+            <label for="username">Username</label>
+            <input type="text" name="username" placeholder="Enter Github username" required autofocus />
+          </section>
+        </form>
+        <div class="error-message-container">
+          <span class="error-message hidden">There was an error retrieving data.</span>
+        </div>
+      </section>
+    </header>
+    <main class="app-main" role="main">
+      <div class="app-container">
+        <div class="repo-master-container hidden">
+          <div class="repo-title-container hidden">
+            <span class="repo-instructions">Choose a repository</span>
+          </div>
+          <div class="repos-container opacity-hide">
+          </div>
+        </div>
+        <div class="code-master-container">
+          <div class="branch-name-container hidden">
+            <span class="root-branch">Branch</span>
+            <span class="branch"></span>
+            <span class="breadcrumbs"></span>
+          </div>
+          <div class="code-container hidden">
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="app-footer" role="contentInfo">
+    </footer>
+  <script type="text/javascript" src="dist/js/bundle.js"></script></body>
+</html>

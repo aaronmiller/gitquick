@@ -1,0 +1,56 @@
+@import "./fonts";
+
+// Welcome Screen
+.welcome-container {
+  position: absolute;
+  z-index: 9997;
+  padding: 10px;
+  top: 0;
+  left: 0;
+  color: #222;
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+  -webkit-transition: .75s all;
+  -moz-transition: .75s all;
+  -ms-transition: .75s all;
+  -o-transition: .75s all;
+  transition: .75s all;
+
+  .title {
+    font-size: 18px;
+  }
+
+  .welcome-content {
+    padding-top: 35vh;
+    line-height: 50px;
+
+    .welcome-text {
+      font-size: 40px;
+      font-weight: bolder;
+    }
+
+    .start-button {
+      padding: 0;
+      width: 250px;
+      height: 45px;
+      cursor: pointer;
+      font: 18px @mainFont;
+      margin-top: 10px;
+      border: none;
+      background-color: #222;
+      -webkit-transition: .1s all;
+      -moz-transition: .1s all;
+      -ms-transition: .1s all;
+      -o-transition: .1s all;
+      transition: .1s all;
+      color: #fff;
+      outline: none;
+
+      &:hover {
+        background-color: #777;
+        color: #fff;
+      }
+    }
+  }
+}
